@@ -1,62 +1,58 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-
-:root{
-    --bg-color: #f4f6fa;
-    --purple: #a729f5;
-    --white: #fff;
-    --button-bg: #fff;
-    --primary-text-color: #313e51;
-    --secondery-text-color: #626c7f;
-    --shadow: 0px 16px 40px 0px rgba(143,160,193,0.14);
-    --bg-html: #fff1e9;
-    --bg-css: #e0fdef;
-    --bg-js: #ebf0ff;
-    --bg-acessibilidade: #f6e7ff;
+:root {
+    --bg-color: #F4F6FA;
+    --white: #FFF;
+    --purple:#A729F5;
+    --primary-text-color: #313E51;
+    --secundary-text-color: #626C7F;
+    --shadow: 0px 26px 40px 0px rgba(143, 160, 193, 0.14);
+    --bg-html: #FFF1E9;
+    --bg-css: #E0FDEF;
+    --bg-javascript: #EBF0FF;
+    --bg-acessibilidade: #F6E7FF;
+    --button-bg: #FFF;
     --bg-mobile: url(./assets/images/pattern-background-mobile-light.svg);
-    --bg-desktop: url(./assets/images/pattern-background-desktop-light.svg) 
+    --bg-desktop: url(./assets/images/pattern-background-desktop-light.svg)
 }
 
-body.escuro{
-    --bg-color: #313e51;
+body.escuro {
+    --bg-color: #313E51;
+    --bg-mobile: url(assets/images/pattern-background-mobile-dark.svg);
+    --bg-desktop: url(assets/images/pattern-background-desktop-dark.svg);
     --bg-mobile: url(./assets/images/pattern-background-mobile-dark.svg);
     --bg-desktop: url(./assets/images/pattern-background-desktop-dark.svg);
-    --primary-text-color: #fff;
-    --secondery-text-color: #abc1e1;
-    --button-bg: #3b4d66;
+    --primary-text-color: #FFF;
+    --secundary-text-color: #ABC1E1;
+    --button-bg: #3B4D66;
     --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
 }
-
-body{
+body {
     height: 100svh;
     background: var(--bg-mobile) var(--bg-color);
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-header{
+header {
     padding: 16px 24px;
     display: flex;
     justify-content: flex-end;
 }
-
-.tema{
-    padding: 8px 0px;
+.tema {
+    padding: 8px 0;
     display: flex;
     align-items: center;
     gap: 8px;
 }
-
 .tema img {
     width: 16px;
 }
-
-.tema button{
+.tema button {
     height: 20px;
     width: 32px;
     background: var(--purple);
@@ -64,47 +60,37 @@ header{
     border-radius: 999px;
     padding: 4px;
 }
-
-.tema button div{
+.tema button div {
     background: var(--white);
     width: 12px;
     height: 12px;
     border-radius: 999px;
 }
-
-main{
-    padding: 32px 24px;
+main {
+    padding: 32px;
 }
-
-.boas_vindas{
-    margin-bottom: 40px;
-}
-
-.boas_vindas h1{
+.boas_vindas h1 {
     font-size: 40px;
     font-weight: 300;
     color: var(--primary-text-color);
     margin-bottom: 16px;
 }
-
-.boas_vindas h1 strong{
+.boas_vindas h1 strong {
     font-weight: 500;
 }
-
 .boas_vindas p {
-    color: var(--secondery-text-color);
+    color: var(--secundary-text-color);
     font-size: 14px;
     line-height: 150%;
     font-style: italic;
+    margin-bottom: 40px;
 }
-
 .assuntos {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-
-.assuntos button{
+.assuntos button {
     border: none;
     background: var(--button-bg);
     display: flex;
@@ -117,92 +103,74 @@ main{
     font-weight: 500;
     color: var(--primary-text-color);
 }
-
-.assuntos button div{
+.assuntos button div {
     width: 40px;
     height: 40px;
     padding: 5px;
     border-radius: 5px;
 }
-
-.assuntos button img{
+.assuntos button img {
     width: 100%;
 }
-
-.botao_html div{
+.botao_html div {
     background: var(--bg-html);
 }
-
-.botao_css div{
-    background: var(--bg-css);
+.botao_css div {
+    background-size: var(--bg-css);
 }
-
-.botao_js div{
-    background: var(--bg-js);
+.botao_javascript div {
+    background-size: var(--bg-javascript);
 }
-
-.botao_acess div {
-    background: var(--bg-acessibilidade);
+.botao_acessibilidade div {
+    background-size: var(--bg-acessibilidade);
 }
-
 @media(min-width: 1100px) {
     body {
         background: var(--bg-desktop) var(--bg-color);
         background-size: cover;
         background-repeat: no-repeat;
     }
-
-    header{
+    header {
         margin-block: 81px;
     }
-
     .tema {
         gap: 16px;
     }
-
     .tema img {
-        width: 24px;
+        width: 16px;
     }
-
     .tema button {
         width: 48px;
         height: 28px;
     }
-
     .tema button div {
         width: 20px;
-        height: 20px;
+        height: 20px; 
     }
-
     main {
         display: flex;
         max-width: 1160px;
         margin-inline: auto;
     }
-
     section {
         width: 100%;
     }
-
     .boas_vindas h1 {
         font-size: 64px;
         margin-bottom: 48px;
     }
-
     .boas_vindas p {
         font-size: 20px;
     }
-
-    .assuntos{
+    .assuntos {
         gap: 24px;
     }
-
     .assuntos button {
         font-size: 28px;
         padding: 20px;
         gap: 32px;
     }
-
+    
     .assuntos button div {
         width: 56px;
         height: 56px;
