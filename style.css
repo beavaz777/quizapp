@@ -39,8 +39,6 @@ header {
     padding: 16px 24px;
     display: flex;
     justify-content: flex-end;
-    max-width: 1160px;
-    margin-inline: auto;
 }
 .tema {
     padding: 8px 0;
@@ -58,7 +56,9 @@ header {
     border: 0;
     border-radius: 999px;
     padding: 4px;
+    display: flex;
 }
+
 .tema button div {
     background: var(--white);
     width: 12px;
@@ -129,13 +129,12 @@ main {
         background-size: cover;
         background-repeat: no-repeat;
     }
-
     header {
         margin-block: 81px;
         max-width: 1160px;
-        margin-inline: auto;
-    }
-
+        margin-inline: auto; 
+    } 
+    /* ajuste feito */
     .tema {
         gap: 16px;
     }
