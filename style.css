@@ -103,7 +103,6 @@ main {
     color: var(--primary-text-color);
     cursor: pointer;
 }
-
 .assuntos button div {
     width: 40px;
     height: 40px;
@@ -113,18 +112,30 @@ main {
 .assuntos button img {
     width: 100%;
 }
+
 .botao_html div {
+.botao_html {
     background: var(--bg-html);
 }
+
 .botao_css div {
     background-size: var(--bg-css);
+.botao_css {
+    background: var(--bg-css);
 }
+
 .botao_javascript div {
     background-size: var(--bg-javascript);
+.botao_javascript {
+    background: var(--bg-javascript);
 }
+
 .botao_acessibilidade div {
     background-size: var(--bg-acessibilidade);
+.botao_acessibilidade {
+    background: var(--bg-acessibilidade);
 }
+
 @media(min-width: 1100px) {
     body {
         background: var(--bg-desktop) var(--bg-color);
