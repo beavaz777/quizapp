@@ -120,7 +120,6 @@ main h2 strong {
     color: var(--secundary-text-color);
     font-size: 18px;
 }
-
 main button { 
     padding: 16px;
     border-radius: 12px;
@@ -132,12 +131,10 @@ main button {
     font-weight: 500;
     transition: background 0.7s;
 }
-
 main button:hover {
     background: var(--purple-hover);
     cursor: pointer;
 }
-
 @media(min-width: 1100px) {
     body {
         background: var(--bg-desktop) var(--bg-color);
@@ -171,20 +168,36 @@ main button:hover {
         width: 20px;
         height: 20px; 
     }
-
-    main {
+    main{
         display: flex;
         gap: 140px;
         max-width: 1160px;
         margin-inline: auto;
     }
-
     main h2,
     main > div {
         width: 100%;
     }
-
-    main h2{
+    main h2 {
         font-size: 64px;
+    }
+
+    .pontuacao {
+        border-radius: 24px;
+        margin-bottom: 32px;
+    }
+
+    .pontuacao strong {
+        font-size: 144px;
+    }
+
+    .pontuacao p {
+        font-size: 24px;
+    }
+
+    main button {
+        font-size: 22px;
+        padding: 24px;
+        border-radius: 24px;
     }
 }
