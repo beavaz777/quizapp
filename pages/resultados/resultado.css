@@ -15,8 +15,6 @@
     --primary-text-color: #313E51;
     --secundary-text-color: #626C7F;
     --shadow: 0px 26px 40px 0px rgba(143, 160, 193, 0.14);
-    --green: #26D782;
-    --red: #EE5454;
     --bg-html: #FFF1E9;
     --bg-css: #E0FDEF;
     --bg-javascript: #EBF0FF;
@@ -82,7 +80,10 @@ header {
     border: 0;
     border-radius: 999px;
     padding: 4px;
+    display: flex;
+    cursor: pointer;
 }
+
 .tema button div {
     background: var(--white);
     width: 12px;
@@ -112,7 +113,6 @@ main h2 strong {
     margin-bottom: 12px;
     box-shadow: var(--shadow);
 }
-
 .pontuacao strong {
     font-size: 88px;
     color: var(--primary-text-color);
@@ -134,7 +134,6 @@ main button {
     transition: background 0.7s;
     box-shadow: var(--shadow);
 }
-
 main button:hover {
     background: var(--purple-hover);
     cursor: pointer;
