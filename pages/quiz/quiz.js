@@ -64,7 +64,7 @@ function montarPergunta() {
                             </div>
                         </label>
                         <label for="alternativa_b">
-                            <input type="radio" id="alternativa_b" name="alternativa" value=" ${alterarSinais(quiz.questions[pergunta-1].options[1])}">
+                            <input type="radio" id="alternativa_b" name="alternativa" value="${alterarSinais(quiz.questions[pergunta-1].options[1])}">
                             <div>
                                 <span>B</span>
                                 ${alterarSinais(quiz.questions[pergunta-1].options[1])}
